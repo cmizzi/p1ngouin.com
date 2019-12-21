@@ -97,7 +97,13 @@ export default {
 	 ** Netlify configuration.
 	 */
 	netlify: {
-		mergeSecurityHeaders: true
+		mergeSecurityHeaders: true,
+		redirects: [
+			{
+				from : '/active-and-passive-ftp-with-docker/',
+				to   : '/posts/active-and-passive-ftp-with-docker/',
+			}
+		]
 	},
 
 	/*
