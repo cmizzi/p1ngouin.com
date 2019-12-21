@@ -1,6 +1,8 @@
-# blog
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8bb5ed41-dfde-4f1a-8d61-c075849a366b/deploy-status)](https://app.netlify.com/sites/romantic-kepler-7d7754/deploys)
 
-> My praiseworthy Nuxt.js project
+# p1ngouin.com
+
+> My personnal blog about tips, PHP, Docker, Javascript and more!
 
 ## Build Setup
 
