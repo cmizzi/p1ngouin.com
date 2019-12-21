@@ -1,0 +1,44 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+	font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+.markup {
+	p {
+		@apply my-2 leading-relaxed;
+	}
+
+	a {
+		@apply text-gray-700 underline;
+	}
+
+	ul {
+		@apply list-disc list-inside ml-8 mb-4;
+	}
+
+	h2 {
+		@apply mt-8 mb-4 text-xl text-gray-900;
+	}
+
+	pre {
+		@apply rounded-lg mb-4;
+	}
+
+	strong, b {
+		@apply font-semibold;
+	}
+
+	em, i {
+		@apply italic;
+	}
+}

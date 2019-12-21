@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://p1ngouin.com/sitemap.xml

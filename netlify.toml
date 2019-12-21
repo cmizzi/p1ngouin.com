@@ -1,0 +1,6 @@
+[build]
+publish = "dist"
+command = "yarn generate"
+
+[context.production.environment]
+BASE_URL = 'https://p1ngouin.com'
