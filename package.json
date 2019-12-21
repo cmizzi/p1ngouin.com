@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@bazzite/nuxt-netlify": "^0.1.1",
     "@nuxtjs/sitemap": "^2.0.1",
     "frontmatter-markdown-loader": "^3.1.0",
     "markdown-it-prism": "^2.0.3",

@@ -90,7 +90,15 @@ export default {
 	modules: [
 		'nuxt-trailingslash-module',
 		'@nuxtjs/sitemap',
+		'@bazzite/nuxt-netlify',
 	],
+
+	/*
+	 ** Netlify configuration.
+	 */
+	netlify: {
+		mergeSecurityHeaders: true
+	},
 
 	/*
 	 ** Configure sitemap generation.

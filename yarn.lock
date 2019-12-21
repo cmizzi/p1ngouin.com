@@ -710,6 +710,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@bazzite/nuxt-netlify@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@bazzite/nuxt-netlify/-/nuxt-netlify-0.1.1.tgz#41a3e0aeb8805e632d3a53f7417cf06e11ce3432"
+  integrity sha512-zeiTu780WmloHlG0ZX5vLExUTIF5rC+8LpCkTdCzjS08D6GA4a+IpuX9hM9F9sCmg0MMlLzRrXBZYnobTxmOtQ==
+  dependencies:
+    consola "^2.7.1"
+    fs-extra "^8.0.1"
+    lodash.template "^4.4.0"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -2154,7 +2163,7 @@ consola@^1.4.5:
     lodash "^4.17.5"
     std-env "^1.1.0"
 
-consola@^2.10.0, consola@^2.10.1, consola@^2.11.0, consola@^2.11.1, consola@^2.6.0, consola@^2.9.0:
+consola@^2.10.0, consola@^2.10.1, consola@^2.11.0, consola@^2.11.1, consola@^2.6.0, consola@^2.7.1, consola@^2.9.0:
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.11.1.tgz#1df259c0a7aef44c9eb4f448e3a20ba0850a65e7"
   integrity sha512-zFH/xFAE/KHJiWqwyTEDmdFe34Swc0pqMKJeowTvR3irepx8kKPu8bjaKzRd+RLjLH+0TvFxFBnohbSUQ+hOsw==
@@ -3168,7 +3177,7 @@ frontmatter-markdown-loader@^3.1.0:
     loader-utils "^1.2.3"
     markdown-it "^10.0.0"
 
-fs-extra@^8.0.0, fs-extra@^8.1.0:
+fs-extra@^8.0.0, fs-extra@^8.0.1, fs-extra@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
@@ -4089,7 +4098,7 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
-lodash.template@^4.5.0:
+lodash.template@^4.4.0, lodash.template@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
   integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
