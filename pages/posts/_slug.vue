@@ -45,9 +45,18 @@ export default {
 
 			// Specific theme for Prism.js
 			link: [
-				{ hid: 'prismjs', rel: 'stylesheet', href: `https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css` },
-				// { hid: 'prismjs', rel: 'stylesheet', href: `https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/${this.prismTheme}.min.css` },
-			]
+				{
+					hid    : 'prismjs',
+					rel    : 'preload',
+					href   : 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css',
+					as     : 'style',
+					onload : "this.onload = null; this.rel = 'stylesheet';"
+				},
+			],
+
+			__dangerouslyDisableSanitizersByTagID: {
+				prismjs: ['onload']
+			}
 		}
 	}
 }
