@@ -30,7 +30,8 @@ export default {
 			{ hid: 'og:locale', name: 'og:locale', content: 'en_US' },
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'preconnect', href: 'https://stats.g.doubleclick.net' },
 		]
 	},
 
