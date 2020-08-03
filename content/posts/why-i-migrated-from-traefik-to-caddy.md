@@ -1,10 +1,9 @@
 ---
-date        : 2019-12-03T17:00:10+01:00
 title       : Why I migrated from Traefik to Caddy
 description : The primary reasons why I migrated from Traefik to Caddy.
 ---
 
-First, let's define what is [traefik](https://traefik.io/). Traefik is a an
+First, let's define what is [Traefik](https://traefik.io/). Traefik is a an
 open-source reverse proxy and load balancer for HTTP and TCP-based applications.
 It generates SSL certificates for you on the fly (based on a configuration
 defined in a static file or dynamically using Docker networks and labels). The

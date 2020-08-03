@@ -5,7 +5,9 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-	theme: {},
-	variants: {},
-	plugins: []
+    theme    : {},
+    variants : {},
+    plugins  : [
+        require('@tailwindcss/typography'),
+    ]
 }

@@ -1,18 +1,18 @@
 <template>
 	<div>
 		<h1 class="text-3xl text-gray-900">
-			{{ post.attributes.title }}
+			{{ post.title }}
 		</h1>
 
-		<div v-html="post.html" class="mt-4 markup"></div>
+        <nuxt-content :document="post" class="mt-4 prose sm:prose-lg max-w-none" />
 	</div>
 </template>
 
 <script>
 export default {
-	async asyncData ({ params, error }) {
+	async asyncData ({ $content, params, error }) {
 		try {
-			return { post: await import(`~/content/posts/${params.slug}.md`) }
+            return { post: await $content(`posts/${params.slug}`).fetch() }
 		} catch (e) {
 			console.debug(e)
 		}
@@ -20,25 +20,15 @@ export default {
 		return error({ statusCode: 404, message: 'Post not found' })
 	},
 
-	computed: {
-		// prismTheme () {
-		// 	if (this.darkMode) {
-		// 		return 'prism-tomorrow'
-		// 	}
-
-		// 	return 'prism'
-		// }
-	},
-
 	head () {
 		return {
-			title : this.post.attributes.title,
+			title : this.post.title,
 			meta  : [
-				{ hid: 'description', name: 'description', content: this.post.attributes.description },
+				{ hid: 'description', name: 'description', content: this.post.description },
 
 				// Opengraph
-				{ hid: 'og:title', name: 'og:title', content: this.post.attributes.title },
-				{ hid: 'og:description', name: 'og:description', content: this.post.attributes.description },
+				{ hid: 'og:title', name: 'og:title', content: this.post.title },
+				{ hid: 'og:description', name: 'og:description', content: this.post.description },
 				{ hid: 'og:type', name: 'og:type', content: 'article' },
 
 			],

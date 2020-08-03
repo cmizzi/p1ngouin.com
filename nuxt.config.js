@@ -1,14 +1,4 @@
-import { join, resolve, basename } from 'path'
-import Mode from 'frontmatter-markdown-loader/mode'
-import md from 'markdown-it'
-import prism from 'markdown-it-prism'
-import 'prismjs/components/prism-docker'
-import 'prismjs/components/prism-diff'
-import glob from 'glob'
-
-const dynamicRoutes = {
-	'/posts': 'posts/*.md'
-}
+import { join } from 'path'
 
 export default {
 	mode: 'universal',
@@ -39,21 +29,6 @@ export default {
 	 ** Customize the progress-bar color
 	 */
 	loading: { color: '#fff' },
-
-	/*
-	 ** Generate dynamic routes.
-	 */
-	generate: {
-		routes: [
-			...[].concat(
-				...Object.keys(dynamicRoutes).map((url) => {
-					return glob
-						.sync(dynamicRoutes[url], { cwd: 'content' })
-						.map(filepath => `${url}/${basename(filepath, '.md')}`)
-				})
-			)
-		]
-	},
 
 	/*
 	 ** Global CSS
@@ -92,6 +67,7 @@ export default {
 		'nuxt-trailingslash-module',
 		'@nuxtjs/sitemap',
 		'@bazzite/nuxt-netlify',
+        '@nuxt/content',
 	],
 
 	/*
@@ -130,15 +106,7 @@ export default {
 		 ** You can extend webpack config here
 		 */
 		extend (config, ctx) {
-			config.module.rules.push({
-				test    : /\.md$/,
-				include : resolve(__dirname, "content"),
-				loader  : "frontmatter-markdown-loader",
-				options : {
-					markdownIt : md({ html: true }).use(prism),
-					mode       : [Mode.HTML, Mode.META]
-				}
-			});
+            //
 		}
 	}
 }

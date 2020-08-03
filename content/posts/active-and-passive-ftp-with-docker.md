@@ -1,7 +1,6 @@
 ---
-date        : 2019-12-01T18:30:20+01:00
-title       : Active and passive FTP with Docker
-description : FTPs are already boring enough to set up when you're behind a firewall. But when you try to set up a FTP with Docker, it's even more complicated. To do this, we will use ufw to configure the system firewall and proftpd to manage our FTP server.
+title: Active and passive FTP with Docker
+description: FTPs are already boring enough to set up when you're behind a firewall. But when you try to set up a FTP with Docker, it's even more complicated. To do this, we will use ufw to configure the system firewall and proftpd to manage our FTP server.
 ---
 
 We will run a FTP server, behind a firewall using Docker. Cool, isn't it?

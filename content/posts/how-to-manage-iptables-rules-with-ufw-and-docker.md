@@ -1,5 +1,4 @@
 ---
-date        : 2019-12-20T10:56:06+01:00
 title       : How to manage IPTables rules with UFW and Docker
 description : When using Docker, it has added a whole bunch of firewall rules by default. Let's UFW rules Docker.
 ---

@@ -1,5 +1,5 @@
 <template>
-	<main class="antialiased w-full px-4 sm:max-w-md lg:max-w-4xl mx-auto text-gray-800">
+	<main class="antialiased w-full px-4 sm:max-w-md lg:max-w-6xl mx-auto text-gray-800">
 		<header class="py-4 flex justify-between">
 			<nuxt-link to="/" class="text-2xl tracking-wide">p1ngouin</nuxt-link>
 
