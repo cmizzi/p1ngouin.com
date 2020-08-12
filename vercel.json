@@ -2,9 +2,9 @@
     "trailingSlash" : false,
     "cleanUrls"     : true,
     "redirects"     : [
-        { "source": "/active-and-passive-ftp-with-docker/", "destination": "/posts/active-and-passive-ftp-with-docker" },
-        { "source": "/active-and-passive-ftp-with-docker/amp/", "destination": "/posts/active-and-passive-ftp-with-docker" },
-        { "source": "/author/cyril/", "destination": "/" },
-        { "source": "/tag/docker/", "destination": "/" }
+        { "source": "/active-and-passive-ftp-with-docker", "destination": "/posts/active-and-passive-ftp-with-docker" },
+        { "source": "/active-and-passive-ftp-with-docker/amp", "destination": "/posts/active-and-passive-ftp-with-docker" },
+        { "source": "/author/cyril", "destination": "/" },
+        { "source": "/tag/docker", "destination": "/" }
     ]
 }
