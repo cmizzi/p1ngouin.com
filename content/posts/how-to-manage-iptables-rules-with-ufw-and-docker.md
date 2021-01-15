@@ -65,7 +65,7 @@ flush-all)
 ```
 
 Now you have to tell the firewall that the rules defined by UFW must be executed
-**before** those of Docker. Let's add these lines to the `/etc/ufw/after.init`
+**before** those of Docker. Let's add these lines to the `/etc/ufw/after.rules`
 file.
 
 **Note that the `$INTERFACE` variable must be replaced with the name of the
